@@ -8,12 +8,37 @@ var int = 'My Interests:'
 var interests = ['coffee', 'tech', 'tigers', 'fitness'];
 var mpe = 'My Previous Experience:'
 var pastPositions = [
-    {company: 'Ultaca', location: 'Pelham, AL', title: 'Marketing Manager', description: 'Assist with all marketing needs'},
-    {company: 'Vestavia CC', location: 'Vestavia, AL', title: 'Merchandise Manager', description: 'Assist with merchandise needs'},
-    {company: 'Southern Shirt', location: 'Tuscaloosa, AL', title: 'Marketing Manager', description: 'Assist with marketing needs'}
+    { company: 'Ultaca', location: 'Pelham, AL', title: 'Marketing Manager', description: 'Assist with all marketing needs' },
+    { company: 'Vestavia CC', location: 'Vestavia, AL', title: 'Merchandise Manager', description: 'Assist with merchandise needs' },
+    { company: 'Southern Shirt', location: 'Tuscaloosa, AL', title: 'Marketing Manager', description: 'Assist with marketing needs' }
 ];
+
+function displaySkill() {
+    for (i = 0; i < skills.length; i++) {
+        if (skills[i].isCool) {
+            console.log("BAM: " + skills[i].skill)
+        } else {
+            console.log(skills[i].skill)
+        }
+    }
+}
 var sk = 'My Skills:'
-var skills = ['BAM: Marketing', 'BAM: Photography', 'Email', 'Facebook Ads'];
+var skills = [
+    { skill: 'Marketing', isCool: true },
+    { skill: 'Photography', isCool: true },
+    { skill: 'Email', isCool: false },
+    { skill: 'Facebook Ads', isCool: false }
+];
+
+displaySkill()
+
+function displayPosition(cName, jobTitle, jDescription) {
+    console.log(jobTitle + " at " + cName + " to " + jDescription)
+}
+
+displayPosition('Ultaca', 'Marketing Manager', 'Assist with all marketing needs')
+displayPosition('Vestavia CC', 'Merchandise Manager', 'Assist with merchandise needs')
+displayPosition('Southern Shirt', 'Marketing Manager', 'Assist with marketing needs')
 
 console.log(n + name.toUpperCase() + "\n" + c + career + "\n" + am + aboutMe + "\n\n");
 console.log(int);
@@ -21,10 +46,10 @@ for (i = 0; i < interests.length; i++) {
     console.log('* ' + interests[i]);
 }
 console.log("\n" + mpe);
-for(x = 0; x < pastPositions.length; x++) {
+for (x = 0; x < pastPositions.length; x++) {
     console.log('* ' + pastPositions[x].company + " in " + pastPositions[x].location + " as " + pastPositions[x].title + " to " + pastPositions[x].description);
 }
 console.log("\n" + sk);
-for(y = 0; y < skills.length; y++) {
+for (y = 0; y < skills.length; y++) {
     console.log('* ' + skills[y]);
 }
