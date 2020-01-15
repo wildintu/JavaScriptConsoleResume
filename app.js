@@ -13,9 +13,9 @@ var pastPositions = [
     { company: 'Southern Shirt', location: 'Tuscaloosa, AL', title: 'Marketing Manager', description: 'Assist with marketing needs' }
 ];
 
-console.log(n + name.toUpperCase() + "\n" + c + career + "\n" + am + aboutMe + "\n");
+console.log(n + name.toUpperCase() + "\n" + c + career + "\n" + am + aboutMe);
 
-console.log(int);
+console.log('\n' + int);
 
 function displayInterests(inter) {
     console.log('* ' + inter);
