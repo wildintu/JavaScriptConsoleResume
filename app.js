@@ -13,15 +13,38 @@ var pastPositions = [
     { company: 'Southern Shirt', location: 'Tuscaloosa, AL', title: 'Marketing Manager', description: 'Assist with marketing needs' }
 ];
 
+console.log(n + name.toUpperCase() + "\n" + c + career + "\n" + am + aboutMe + "\n");
+
+console.log(int);
+
+function displayInterests(inter) {
+    console.log('* ' + inter);
+}
+
+displayInterests('Coffee')
+displayInterests('Tech')
+displayInterests('Tigers')
+displayInterests('Fitness')
+
+console.log("\n" + mpe);
+function displayPosition(cName, jobTitle, jDescription) {
+    console.log('* ' + jobTitle + " at " + cName + " to " + jDescription)
+}
+
+displayPosition('Ultaca', 'Marketing Manager', 'Assist with all marketing needs')
+displayPosition('Vestavia CC', 'Merchandise Manager', 'Assist with merchandise needs')
+displayPosition('Southern Shirt', 'Marketing Manager', 'Assist with marketing needs')
+
 function displaySkill() {
     for (i = 0; i < skills.length; i++) {
         if (skills[i].isCool) {
-            console.log("BAM: " + skills[i].skill)
+            console.log('* ' + "BAM: " + skills[i].skill)
         } else {
-            console.log(skills[i].skill)
+            console.log('* ' + skills[i].skill)
         }
     }
 }
+
 var sk = 'My Skills:'
 var skills = [
     { skill: 'Marketing', isCool: true },
@@ -30,26 +53,16 @@ var skills = [
     { skill: 'Facebook Ads', isCool: false }
 ];
 
+
+console.log('\n' + sk);
 displaySkill()
 
-function displayPosition(cName, jobTitle, jDescription) {
-    console.log(jobTitle + " at " + cName + " to " + jDescription)
-}
 
-displayPosition('Ultaca', 'Marketing Manager', 'Assist with all marketing needs')
-displayPosition('Vestavia CC', 'Merchandise Manager', 'Assist with merchandise needs')
-displayPosition('Southern Shirt', 'Marketing Manager', 'Assist with marketing needs')
-
-console.log(n + name.toUpperCase() + "\n" + c + career + "\n" + am + aboutMe + "\n\n");
-console.log(int);
-for (i = 0; i < interests.length; i++) {
-    console.log('* ' + interests[i]);
-}
-console.log("\n" + mpe);
-for (x = 0; x < pastPositions.length; x++) {
-    console.log('* ' + pastPositions[x].company + " in " + pastPositions[x].location + " as " + pastPositions[x].title + " to " + pastPositions[x].description);
-}
-console.log("\n" + sk);
-for (y = 0; y < skills.length; y++) {
-    console.log('* ' + skills[y]);
-}
+//console.log("\n" + mpe);
+//for (x = 0; x < pastPositions.length; x++) {
+//    console.log('* ' + pastPositions[x].company + " in " + pastPositions[x].location + " as " + pastPositions[x].title + " to " + pastPositions[x].description);
+//}
+// console.log("\n" + sk);
+// for (y = 0; y < skills.length; y++) {
+//     console.log('* ' + skills[y]);
+// }
