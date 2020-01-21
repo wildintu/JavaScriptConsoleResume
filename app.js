@@ -65,4 +65,4 @@ displaySkill()
 // console.log("\n" + sk);
 // for (y = 0; y < skills.length; y++) {
 //     console.log('* ' + skills[y]);
-// }
+// };
